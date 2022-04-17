@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@as-pect/cli": "^6.2.4",
+    "@graphprotocol/graph-ts": "^0.26.0",
     "assemblyscript": "^0.19.23"
   },
   "type": "commonjs",
