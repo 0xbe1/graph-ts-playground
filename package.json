@@ -1,8 +1,9 @@
 {
   "devDependencies": {
-    "assemblyscript": "^0.20.4"
+    "@as-pect/cli": "^6.2.4",
+    "assemblyscript": "^0.19.23"
   },
-  "type": "module",
+  "type": "commonjs",
   "exports": {
     ".": {
       "import": "./build/release.js",
@@ -13,7 +14,7 @@
     "asbuild:debug": "asc assembly/index.ts --target debug",
     "asbuild:release": "asc assembly/index.ts --target release",
     "asbuild": "yarn asbuild:debug && yarn asbuild:release",
-    "test": "node tests",
+    "test": "asp --verbose",
     "start": "npx serve ."
   }
 }
